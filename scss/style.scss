@@ -1,0 +1,642 @@
+@use "variables" as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: $color-paper;
+    color: $color-ink;
+    font-family: $font-main;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+}
+
+.page {
+    width: 100%;
+    padding: 28px max(20px, calc((100% - 1100px) / 2)) 52px;
+}
+
+.header {
+    padding: 34px 112px 34px 36px;
+    overflow: visible;
+    border-radius: 24px;
+    background: linear-gradient(135deg, $color-primary-dark, $color-primary);
+    color: $color-surface;
+    box-shadow: $shadow-card;
+
+    &__eyebrow {
+        margin: 0 0 8px;
+        color: #c8ddce;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin: 0 0 8px;
+        font-size: clamp(1.8rem, 4vw, 2.7rem);
+        line-height: 1.15;
+    }
+
+    &__description {
+        max-width: 720px;
+        margin: 0;
+        color: #e1eee4;
+    }
+
+    // Элемент шапки отвечает за внешнее позиционирование фиксированной корзины.
+    &__cart {
+        position: fixed;
+        z-index: 1000;
+        top: 22px;
+        right: 22px;
+    }
+}
+
+.cart-widget {
+    display: block;
+    width: 66px;
+    height: 66px;
+    padding: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    background: $color-primary;
+    color: $color-surface;
+    box-shadow: 0 8px 22px rgba(18, 48, 34, 0.24);
+    text-decoration: none;
+    transition: transform $transition-base, background-color $transition-base, box-shadow $transition-base;
+
+    &__icon {
+        display: block;
+        width: 30px;
+        height: 30px;
+        fill: none;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2;
+    }
+
+    &__count {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        display: block;
+        min-width: 25px;
+        height: 25px;
+        padding: 1px 6px;
+        border: 2px solid $color-surface;
+        border-radius: $radius-pill;
+        background: $color-accent;
+        color: $color-primary-dark;
+        font-size: 0.78rem;
+        font-weight: 800;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    &__label {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+    }
+
+    &:hover {
+        transform: translateY(-3px);
+        background: $color-primary-dark;
+        box-shadow: 0 12px 26px rgba(18, 48, 34, 0.3);
+    }
+
+    &:focus-visible {
+        outline: 3px solid $color-accent;
+        outline-offset: 4px;
+    }
+}
+
+.page__navigation {
+    margin: 18px 0 26px;
+}
+
+.navigation {
+    padding: 10px 0 14px;
+    border-bottom: 1px solid $color-border;
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+        margin: 0 7px 6px 0;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 8px 14px;
+        border-radius: $radius-pill;
+        color: $color-primary-dark;
+        font-size: 0.94rem;
+        font-weight: 650;
+        text-decoration: none;
+        transition: background-color $transition-base, color $transition-base, transform $transition-base;
+
+        &:hover {
+            transform: translateY(-1px);
+            background: $color-soft-green;
+            color: $color-primary;
+        }
+
+        &:focus-visible {
+            outline: 2px solid $color-primary;
+            outline-offset: 3px;
+        }
+
+        &_current {
+            background: $color-primary;
+            color: $color-surface;
+        }
+    }
+}
+
+.main {
+    display: block;
+}
+
+.main__section {
+    margin-bottom: 20px;
+}
+
+.section {
+    padding: 26px 28px;
+    border: 1px solid $color-border;
+    border-radius: $radius-card;
+    background: $color-surface;
+    box-shadow: $shadow-card;
+
+    &_intro {
+        border-color: #c8ddce;
+        background: linear-gradient(135deg, #ffffff, #f1f7f1);
+    }
+
+    &_note {
+        background: $color-soft-green;
+    }
+
+    &__eyebrow {
+        margin: 0 0 6px;
+        color: $color-primary;
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin: 0 0 15px;
+        color: $color-primary-dark;
+        font-size: clamp(1.35rem, 3vw, 1.8rem);
+        line-height: 1.25;
+    }
+}
+
+.text {
+    max-width: 850px;
+    color: $color-muted;
+}
+
+.section__text {
+    margin: 0 0 14px;
+}
+
+.section__benefits {
+    margin: 0;
+}
+
+.benefits {
+    padding: 0;
+    list-style: none;
+
+    &__item {
+        display: block;
+        margin: 0 0 10px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        background: $color-soft-green;
+    }
+
+    &__mark {
+        display: inline-block;
+        width: 42px;
+        color: $color-primary;
+        font-weight: 800;
+    }
+
+    &__text {
+        color: $color-ink;
+    }
+}
+
+.section__product-card {
+    margin-top: 16px;
+}
+
+.product-card {
+    padding: 22px 24px;
+    border: 1px solid $color-border;
+    border-radius: 15px;
+    background: #fbfcfa;
+    transition: transform $transition-base, box-shadow $transition-base, border-color $transition-base;
+
+    &:hover {
+        transform: translateY(-2px);
+        border-color: #bad0bf;
+        box-shadow: $shadow-card;
+    }
+
+    &_featured {
+        border-color: #b7d0bd;
+        background: #f2f8f2;
+    }
+
+    &__badge {
+        display: inline-block;
+        margin: 0 0 8px;
+        padding: 4px 10px;
+        border-radius: $radius-pill;
+        background: #e0eee2;
+        color: $color-primary;
+        font-size: 0.76rem;
+        font-weight: 800;
+    }
+
+    &__badge_warm {
+        background: $color-accent-soft;
+        color: #815817;
+    }
+
+    &__title {
+        margin: 0 0 7px;
+        color: $color-primary-dark;
+        font-size: 1.28rem;
+    }
+
+    &__description {
+        max-width: 840px;
+        margin: 0 0 10px;
+        color: $color-muted;
+    }
+
+    &__meta {
+        margin: 0 0 6px;
+        color: $color-muted;
+        font-size: 0.9rem;
+    }
+
+    &__price {
+        margin: 0 0 14px;
+        color: $color-primary-dark;
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 17px;
+    border: 1px solid transparent;
+    border-radius: 11px;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.35;
+    text-align: center;
+    text-decoration: none;
+    transition: transform $transition-base, background-color $transition-base, color $transition-base, box-shadow $transition-base;
+
+    &_primary {
+        background: $color-primary;
+        color: $color-surface;
+
+        &:hover {
+            transform: translateY(-2px);
+            background: $color-primary-dark;
+            box-shadow: 0 7px 15px rgba(36, 91, 70, 0.2);
+        }
+    }
+
+    &_secondary {
+        border-color: $color-primary;
+        background: $color-surface;
+        color: $color-primary;
+
+        &:hover {
+            background: $color-soft-green;
+        }
+    }
+
+    &_ghost {
+        border-color: $color-border;
+        background: transparent;
+        color: $color-primary-dark;
+
+        &:hover {
+            background: $color-soft-green;
+        }
+    }
+
+    &:focus-visible {
+        outline: 3px solid $color-accent;
+        outline-offset: 3px;
+    }
+
+    &_submit {
+        min-width: 190px;
+    }
+}
+
+.product-detail {
+    &__figure {
+        margin: 22px 0 28px;
+        padding: 18px;
+        border: 1px solid $color-border;
+        border-radius: 15px;
+        background: #f7faf6;
+        text-align: center;
+    }
+
+    &__image {
+        display: block;
+        width: min(100%, 560px);
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 10px;
+        object-fit: contain;
+    }
+
+    &__caption {
+        margin: 10px 0 0;
+        color: $color-muted;
+        font-size: 0.86rem;
+    }
+
+    &__actions {
+        margin-top: 22px;
+    }
+}
+
+.product-detail__spec-list {
+    margin: 0;
+}
+
+.spec-list {
+    padding: 0;
+    border-top: 1px solid $color-border;
+    list-style: none;
+
+    &__item {
+        display: block;
+        padding: 10px 4px;
+        border-bottom: 1px solid $color-border;
+    }
+
+    &__name {
+        display: inline-block;
+        width: 52%;
+        color: $color-muted;
+    }
+
+    &__value {
+        display: inline-block;
+        color: $color-ink;
+        font-weight: 700;
+    }
+}
+
+.table-wrap {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.order-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: $color-surface;
+
+    &__cell {
+        padding: 12px 14px;
+        border: 1px solid $color-border;
+        text-align: left;
+        vertical-align: middle;
+
+        &_head {
+            background: $color-primary;
+            color: $color-surface;
+            font-weight: 700;
+        }
+    }
+
+    &__body {
+        color: $color-ink;
+    }
+
+    &__body &__row:nth-child(even) {
+        background: #f5f8f4;
+    }
+
+    &__total-label {
+        color: $color-primary-dark;
+        text-align: right;
+    }
+
+    &__total-value {
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    &__row_final {
+        background: $color-accent-soft;
+        font-size: 1.05rem;
+    }
+}
+
+.section__notice {
+    margin: 17px 0;
+}
+
+.notice {
+    padding: 12px 15px;
+    border-left: 4px solid $color-accent;
+    border-radius: 0 10px 10px 0;
+    background: $color-accent-soft;
+    color: #705323;
+    font-size: 0.9rem;
+}
+
+.order-form {
+    max-width: 700px;
+}
+
+.order-form__field {
+    margin: 0 0 17px;
+}
+
+.form-field {
+    &__label {
+        display: block;
+        margin: 0 0 6px;
+        color: $color-ink;
+        font-weight: 700;
+    }
+
+    &__control {
+        display: block;
+        width: 100%;
+        min-height: 46px;
+        padding: 10px 12px;
+        border: 1px solid #cbd8cd;
+        border-radius: 10px;
+        background: $color-surface;
+        color: $color-ink;
+        font: inherit;
+        transition: border-color $transition-base, box-shadow $transition-base, background-color $transition-base;
+
+        &:hover {
+            border-color: #8eae98;
+        }
+
+        &:focus-visible {
+            outline: none;
+            border-color: $color-primary;
+            box-shadow: 0 0 0 3px rgba(36, 91, 70, 0.15);
+        }
+
+        &_textarea {
+            min-height: 112px;
+            resize: vertical;
+        }
+    }
+}
+
+.order-form__check {
+    margin: 8px 0 20px;
+}
+
+.form-check {
+    display: block;
+    color: $color-muted;
+    cursor: pointer;
+
+    &__input {
+        width: 17px;
+        height: 17px;
+        margin: 0 8px 0 0;
+        vertical-align: -3px;
+        accent-color: $color-primary;
+    }
+
+    &__text {
+        vertical-align: middle;
+    }
+}
+
+.page__footer {
+    margin-top: 26px;
+}
+
+.footer {
+    padding: 22px 24px;
+    border-radius: 16px;
+    background: $color-primary-dark;
+    color: #e2eee4;
+    text-align: center;
+
+    &__brand {
+        margin: 0 0 4px;
+        font-weight: 750;
+    }
+
+    &__contact,
+    &__note {
+        margin: 4px 0;
+        color: #c6d8cb;
+        font-size: 0.88rem;
+    }
+
+    &__link {
+        color: #ffffff;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+
+        &:hover {
+            color: $color-accent;
+        }
+
+        &:focus-visible {
+            outline: 2px solid $color-accent;
+            outline-offset: 3px;
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .page {
+        padding: 14px 12px 34px;
+    }
+
+    .header {
+        padding: 28px 88px 26px 20px;
+        border-radius: 18px;
+
+        &__cart {
+            top: 16px;
+            right: 16px;
+        }
+    }
+
+    .cart-widget {
+        width: 58px;
+        height: 58px;
+        padding: 13px;
+
+        &__icon {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    .navigation {
+        &__item {
+            margin-right: 2px;
+        }
+
+        &__link {
+            padding: 7px 9px;
+            font-size: 0.86rem;
+        }
+    }
+
+    .section {
+        padding: 20px 17px;
+    }
+
+    .product-card {
+        padding: 18px;
+    }
+
+    .order-table {
+        min-width: 590px;
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "igromir-lab2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Лабораторная работа №2: БЭМ и SCSS для магазина настольных игр ИгроМир",
+  "scripts": {
+    "build:css": "sass scss/style.scss css/style.css --no-source-map",
+    "watch:css": "sass --watch scss/style.scss:css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}
