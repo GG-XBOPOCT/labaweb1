@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" role="img" aria-labelledby="title desc">
+  <title id="title">Имаджинариум</title><desc id="desc">Абстрактная иллюстрация с воздушными шарами и фантазийными облаками</desc>
+  <defs><linearGradient id="i-bg" x2="1" y2="1"><stop stop-color="#e7dff1"/><stop offset="1" stop-color="#b8cce4"/></linearGradient></defs><rect width="520" height="380" rx="28" fill="url(#i-bg)"/>
+  <g fill="#fff9ed" opacity=".9"><ellipse cx="125" cy="103" rx="58" ry="26"/><ellipse cx="163" cy="94" rx="38" ry="31"/><ellipse cx="372" cy="270" rx="68" ry="25"/><ellipse cx="414" cy="258" rx="35" ry="29"/></g>
+  <g stroke="#514a70" stroke-width="3" fill="none"><path d="M180 116q-8 60-30 112"/><path d="M295 77q-5 90 30 156"/><path d="M390 122q-20 55-8 112"/></g>
+  <g><ellipse cx="180" cy="91" rx="40" ry="53" fill="#ee9c82"/><path d="M180 144 171 157h18Z" fill="#514a70"/><ellipse cx="295" cy="62" rx="44" ry="57" fill="#f3d185"/><path d="M295 119 286 132h18Z" fill="#514a70"/><ellipse cx="390" cy="109" rx="33" ry="45" fill="#8d9fce"/><path d="m390 154-8 12h16Z" fill="#514a70"/></g>
+  <path d="M0 300q95-58 180-10t180-5 160 4v91H0Z" fill="#7d85b0" opacity=".55"/><text x="260" y="340" text-anchor="middle" font-family="Georgia,serif" font-size="30" font-weight="700" fill="#514a70">ИМАДЖИНАРИУМ</text>
+</svg>

@@ -2,48 +2,120 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Настольные игры — главная</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#245b46">
+    <meta name="description" content="Магазин настольных игр «ИгроМир» — магазин настольных игр «ИгроМир».">
+    <title>Магазин настольных игр «ИгроМир» | ИгроМир</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Магазин настольных игр «ИгроМир»</h1>
-        <p>Настольные игры для друзей, семьи и хорошего вечера.</p>
+<a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
+<div class="page">
+    <header class="header">
+        <p class="header__eyebrow">Настольные игры для хорошего вечера</p>
+        <h1 class="header__title">Магазин настольных игр «ИгроМир»</h1>
+        <p class="header__description">Настольные игры для друзей, семьи и хорошего вечера.</p>
+        <a class="header__cart cart-widget" href="collection.html" aria-label="Перейти в корзину, 0 товаров">
+            <svg class="cart-widget__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                <path d="M4 6h3l3 15h14l4-11H9" />
+                <path d="M12 25.5a1.5 1.5 0 1 0 0 .1M23 25.5a1.5 1.5 0 1 0 0 .1" />
+            </svg>
+            <span class="cart-widget__count" aria-hidden="true">0</span>
+            <span class="cart-widget__label">Корзина</span>
+        </a>
     </header>
-    <nav>
-        <a href="index.html">Главная</a> |
-        <a href="catalog.html">Каталог</a> |
-        <a href="detail.html">Игра «Колонизаторы»</a> |
-        <a href="collection.html">Корзина</a> |
-        <a href="checkout.html">Оформление заказа</a>
+    <nav class="page__navigation navigation" aria-label="Основная навигация">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link navigation__link_current" href="index.html" aria-current="page">Главная</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="detail.html">Колонизаторы</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="collection.html">Корзина</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="checkout.html">Оформление заказа</a></li>
+        </ul>
     </nav>
-    <main>
-        <section>
-            <h2>Добро пожаловать!</h2>
-            <p>«ИгроМир» — небольшой магазин настольных игр. У нас можно найти игры
-            для компании, семейного вечера или спокойного отдыха вдвоём.</p>
-            <p>В каталоге представлены популярные игры разных жанров. Выберите игру,
-            посмотрите её характеристики и добавьте товар в свою корзину.</p>
+    <main class="main" id="main-content" tabindex="-1">
+        <section class="main__section section section_intro" aria-labelledby="intro-title">
+            <p class="section__eyebrow">Добро пожаловать</p>
+            <h2 class="section__title" id="intro-title">Найдите игру для своего вечера</h2>
+            <p class="section__text text">«ИгроМир» — небольшой магазин настольных игр. У нас можно найти игры для компании, семейного вечера или спокойного отдыха вдвоём.</p>
+            <p class="section__text text">В каталоге представлены популярные игры разных жанров. Выберите игру, посмотрите её характеристики и добавьте товар в свою корзину.</p>
+            <a class="button button_primary" href="catalog.html">Перейти в каталог</a>
         </section>
-        <section>
-            <h2>Почему выбирают нас</h2>
-            <ul>
-                <li>Игры для разных возрастов.</li>
-                <li>Понятные описания и характеристики товаров.</li>
-                <li>Доставка транспортными компаниями.</li>
+        <section class="main__section section" aria-labelledby="popular-title">
+            <p class="section__eyebrow">Выбор магазина</p>
+            <h2 class="section__title" id="popular-title">Популярные игры</h2>
+            <div class="home-grid">
+                <article class="game-of-day product-card product-card_featured" aria-labelledby="game-day-title">
+                    <div class="game-of-day__art">
+                        <span class="game-of-day__label">Игра дня</span>
+                        <img src="images/colonizers.svg" alt="Иллюстрация коробки настольной игры Колонизаторы" width="520" height="380">
+                    </div>
+                    <div class="game-of-day__content">
+                        <p class="product-card__badge">Стратегия · 3–4 игрока</p>
+                        <h3 class="product-card__title" id="game-day-title">Колонизаторы</h3>
+                        <p class="product-card__description">Осваивайте остров, добывайте ресурсы и стройте дороги. Каждая партия складывается по-новому, поэтому за стол хочется возвращаться.</p>
+                        <div class="price-row" aria-label="Старая цена 3 490 рублей, цена со скидкой 2 990 рублей">
+                            <span class="price-row__old">3 490 ₽</span>
+                            <strong class="price-row__current">2 990 ₽</strong>
+                        </div>
+                        <div class="game-of-day__actions">
+                            <a class="button button_primary" href="detail.html">Подробнее об игре</a>
+                            <a class="button button_secondary" href="collection.html">В корзину</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <a class="product-card__image" href="catalog.html" aria-label="Перейти к игре Каркассон в каталоге">
+                        <img src="images/carcassonne.svg" alt="Иллюстрация коробки настольной игры Каркассон" width="520" height="380" loading="lazy">
+                    </a>
+                    <div class="product-card__body">
+                        <p class="product-card__badge product-card__badge_warm">Семейная стратегия</p>
+                        <h3 class="product-card__title">Каркассон</h3>
+                        <p class="product-card__description">Участники выкладывают тайлы и постепенно строят города, дороги и поля.</p>
+                        <div class="product-card__actions"><strong class="product-card__price">2 190 ₽</strong><a class="button button_small button_secondary" href="catalog.html">Подробнее</a></div>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <a class="product-card__image" href="catalog.html" aria-label="Перейти к игре Имаджинариум в каталоге">
+                        <img src="images/imaginarium.svg" alt="Иллюстрация коробки настольной игры Имаджинариум" width="520" height="380" loading="lazy">
+                    </a>
+                    <div class="product-card__body">
+                        <p class="product-card__badge product-card__badge_warm">Ассоциации</p>
+                        <h3 class="product-card__title">Имаджинариум</h3>
+                        <p class="product-card__description">Игра на воображение и ассоциации, которая подходит для компании друзей.</p>
+                        <div class="product-card__actions"><strong class="product-card__price">1 790 ₽</strong><a class="button button_small button_secondary" href="catalog.html">Подробнее</a></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="main__section section" aria-labelledby="benefits-title">
+            <h2 class="section__title" id="benefits-title">Почему выбирают нас</h2>
+            <ul class="section__benefits benefits">
+                <li class="benefits__item"><span class="benefits__mark">01</span><span class="benefits__text">Игры для разных возрастов и компаний.</span></li>
+                <li class="benefits__item"><span class="benefits__mark">02</span><span class="benefits__text">Понятные описания и характеристики товаров.</span></li>
+                <li class="benefits__item"><span class="benefits__mark">03</span><span class="benefits__text">Доставка транспортными компаниями.</span></li>
             </ul>
         </section>
-        <section>
-            <h2>Популярная игра</h2>
-            <article>
-                <h3>Колонизаторы</h3>
-                <p>Стратегическая игра о развитии поселений и торговле ресурсами.</p>
-                <p><a href="detail.html">Подробнее об игре</a></p>
-            </article>
-        </section>
     </main>
-    <footer>
-        <p>Магазин «ИгроМир». Учебный проект.</p>
-        <p>Контакт: igromir@example.com</p>
+    <aside class="page__sidebar sidebar" aria-label="Полезная информация">
+        <section class="sidebar__panel section section_note">
+            <p class="section__eyebrow">Помощь с выбором</p>
+            <h2 class="sidebar__title">Не знаете, с чего начать?</h2>
+            <p class="section__text text">Ориентируйтесь на количество игроков и желаемую продолжительность партии.</p>
+            <a class="button button_secondary" href="catalog.html">Посмотреть каталог</a>
+        </section>
+        <section class="sidebar__panel section">
+            <p class="section__eyebrow">Совет магазина</p>
+            <h2 class="sidebar__title">Играйте вместе</h2>
+            <p class="section__text text">В подборке есть варианты для семьи, друзей и первого знакомства с настольными играми.</p>
+        </section>
+    </aside>
+    <footer class="page__footer footer">
+        <p class="footer__brand">Магазин «ИгроМир» · Учебный проект</p>
+        <p class="footer__contact">Контакт: <a class="footer__link" href="mailto:igromir@example.com">igromir@example.com</a></p>
+        <p class="footer__note">Лабораторные работы №4–5 · JavaScript, DOM, события и Web Storage</p>
     </footer>
+</div>
 </body>
 </html>
