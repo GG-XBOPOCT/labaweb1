@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="380" viewBox="0 0 520 380">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#71436f"/><stop offset="1" stop-color="#e5b5d0"/></linearGradient></defs>
+<rect width="520" height="380" rx="20" fill="url(#bg)"/>
+<circle cx="460" cy="35" r="95" fill="#fff" opacity=".08"/><circle cx="35" cy="350" r="115" fill="#fff" opacity=".07"/>
+<circle cx="180" cy="150" r="70" fill="#fff" opacity=".8"/><circle cx="300" cy="190" r="45" fill="#fff" opacity=".55"/><path d="M140 270 Q235 190 350 280" fill="none" stroke="#fff" stroke-width="16" stroke-linecap="round"/>
+<rect x="26" y="292" width="468" height="62" rx="13" fill="#14291f" opacity=".78"/>
+<text x="260" y="332" fill="#fff" font-family="Arial,sans-serif" font-size="25" font-weight="700" text-anchor="middle">Диксит</text>
+</svg>
