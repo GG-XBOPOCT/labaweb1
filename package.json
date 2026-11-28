@@ -1,0 +1,22 @@
+{
+  "name": "igromir-vue-lab7-variant12",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Учебный магазин настольных игр ИгроМир — лабораторная работа № 7",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "server": "json-server --watch db.json --port 3000"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "json-server": "^0.17.4",
+    "sass": "^1.83.0",
+    "vite": "^6.4.1"
+  }
+}

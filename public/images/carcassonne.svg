@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 380" role="img" aria-labelledby="title desc">
+  <title id="title">Каркассон</title><desc id="desc">Иллюстрация средневекового замка на зелёном холме</desc>
+  <defs><linearGradient id="c-bg" x2="0" y2="1"><stop stop-color="#e9ecd7"/><stop offset="1" stop-color="#a6c59d"/></linearGradient></defs><rect width="520" height="380" rx="28" fill="url(#c-bg)"/><circle cx="410" cy="70" r="30" fill="#f3d993"/>
+  <path d="M0 285q100-80 190-32t330 6v121H0Z" fill="#7ea77c"/><path d="M80 285q70-70 165-38t195-2v135H80Z" fill="#638f68"/>
+  <g transform="translate(136 85)"><rect x="48" y="86" width="174" height="139" fill="#e7d6ae" stroke="#735f48" stroke-width="5"/><rect x="26" y="69" width="42" height="156" fill="#c7b48d" stroke="#735f48" stroke-width="5"/><rect x="202" y="69" width="42" height="156" fill="#c7b48d" stroke="#735f48" stroke-width="5"/><rect x="97" y="39" width="76" height="186" fill="#f1e4c2" stroke="#735f48" stroke-width="5"/><path d="M26 69 47 25 68 69Zm22 17h174l-22-32H70Z" fill="#8b5a4d"/><path d="M97 39 135 0l38 39Z" fill="#8b5a4d"/><g fill="#456b55"><rect x="42" y="105" width="12" height="24" rx="6"/><rect x="215" y="105" width="12" height="24" rx="6"/><rect x="126" y="67" width="17" height="28" rx="8"/></g><path d="M119 225v-55q16-27 32 0v55" fill="#735f48"/></g>
+  <text x="260" y="340" text-anchor="middle" fill="#315f50" font-family="Georgia,serif" font-size="28" font-weight="700">КАРКАССОН</text>
+</svg>

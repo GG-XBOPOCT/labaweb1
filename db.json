@@ -1,0 +1,335 @@
+{
+  "games": [
+    {
+      "id": "BG-001",
+      "title": "Колонизаторы",
+      "genre": "Стратегия",
+      "minPlayers": 3,
+      "maxPlayers": 4,
+      "price": 3490,
+      "rating": 8.1,
+      "description": "Осваивайте остров, добывайте ресурсы и развивайте поселения.",
+      "image": "images/colonizers.svg",
+      "age": {
+        "minimum": 10,
+        "label": "10+"
+      },
+      "features": [
+        "обмен ресурсами",
+        "развитие поселений"
+      ],
+      "available": true,
+      "oldPrice": 3990,
+      "isHit": true
+    },
+    {
+      "id": "BG-002",
+      "title": "Каркассон",
+      "genre": "Семейная",
+      "minPlayers": 2,
+      "maxPlayers": 5,
+      "price": 2190,
+      "rating": 8,
+      "description": "Выкладывайте тайлы и постепенно создавайте города, дороги и поля.",
+      "image": "images/carcassonne.svg",
+      "age": {
+        "minimum": 7,
+        "label": "7+"
+      },
+      "features": [
+        "размещение тайлов",
+        "планирование"
+      ],
+      "available": true,
+      "oldPrice": 2190,
+      "isHit": true
+    },
+    {
+      "id": "BG-003",
+      "title": "Имаджинариум",
+      "genre": "Ассоциации",
+      "minPlayers": 3,
+      "maxPlayers": 7,
+      "price": 1790,
+      "rating": 7.8,
+      "description": "Подбирайте ассоциации к необычным иллюстрациям и угадывайте замыслы игроков.",
+      "image": "images/imaginarium.svg",
+      "age": {
+        "minimum": 12,
+        "label": "12+"
+      },
+      "features": [
+        "ассоциации",
+        "иллюстрации"
+      ],
+      "available": true,
+      "oldPrice": 1790,
+      "isHit": false
+    },
+    {
+      "id": "BG-004",
+      "title": "Билет на поезд: Европа",
+      "genre": "Стратегия",
+      "minPlayers": 2,
+      "maxPlayers": 5,
+      "price": 2990,
+      "rating": 8.3,
+      "description": "Стройте железнодорожные маршруты и соединяйте города Европы.",
+      "image": "images/ticket-europe.svg",
+      "age": {
+        "minimum": 8,
+        "label": "8+"
+      },
+      "features": [
+        "маршруты",
+        "сбор комплектов"
+      ],
+      "available": true,
+      "oldPrice": 3490,
+      "isHit": false
+    },
+    {
+      "id": "BG-005",
+      "title": "Диксит",
+      "genre": "Ассоциации",
+      "minPlayers": 3,
+      "maxPlayers": 8,
+      "price": 2490,
+      "rating": 7.9,
+      "description": "Создавайте загадки по красочным картам и находите правильные ассоциации.",
+      "image": "images/dixit.svg",
+      "age": {
+        "minimum": 8,
+        "label": "8+"
+      },
+      "features": [
+        "карты с иллюстрациями",
+        "творческое мышление"
+      ],
+      "available": true,
+      "oldPrice": 2490,
+      "isHit": true
+    },
+    {
+      "id": "BG-006",
+      "title": "Кодовые имена",
+      "genre": "Словесная",
+      "minPlayers": 2,
+      "maxPlayers": 8,
+      "price": 1590,
+      "rating": 7.7,
+      "description": "Объединяйте слова подсказками и находите агентов своей команды.",
+      "image": "images/codenames.svg",
+      "age": {
+        "minimum": 10,
+        "label": "10+"
+      },
+      "features": [
+        "командная игра",
+        "ассоциации"
+      ],
+      "available": true,
+      "oldPrice": 1590,
+      "isHit": false
+    },
+    {
+      "id": "BG-007",
+      "title": "Мачи Коро",
+      "genre": "Экономическая",
+      "minPlayers": 2,
+      "maxPlayers": 5,
+      "price": 1890,
+      "rating": 7.1,
+      "description": "Развивайте небольшой город, получайте доход и открывайте новые предприятия.",
+      "image": "images/machi-koro.svg",
+      "age": {
+        "minimum": 7,
+        "label": "7+"
+      },
+      "features": [
+        "развитие города",
+        "кубики"
+      ],
+      "available": true,
+      "oldPrice": 1890,
+      "isHit": false
+    },
+    {
+      "id": "BG-008",
+      "title": "Бэнг!",
+      "genre": "Карточная",
+      "minPlayers": 4,
+      "maxPlayers": 7,
+      "price": 1290,
+      "rating": 7.2,
+      "description": "Участвуйте в противостоянии на Диком Западе и раскройте роли соперников.",
+      "image": "images/bang.svg",
+      "age": {
+        "minimum": 8,
+        "label": "8+"
+      },
+      "features": [
+        "скрытые роли",
+        "карточные действия"
+      ],
+      "available": true,
+      "oldPrice": 1290,
+      "isHit": false
+    },
+    {
+      "id": "BG-009",
+      "title": "Эволюция",
+      "genre": "Стратегия",
+      "minPlayers": 2,
+      "maxPlayers": 4,
+      "price": 2490,
+      "rating": 8,
+      "description": "Создавайте виды животных и приспосабливайте их к меняющимся условиям.",
+      "image": "images/evolution.svg",
+      "age": {
+        "minimum": 12,
+        "label": "12+"
+      },
+      "features": [
+        "развитие видов",
+        "адаптация"
+      ],
+      "available": true,
+      "oldPrice": 2890,
+      "isHit": false
+    },
+    {
+      "id": "BG-010",
+      "title": "7 чудес",
+      "genre": "Стратегия",
+      "minPlayers": 3,
+      "maxPlayers": 7,
+      "price": 3290,
+      "rating": 8.2,
+      "description": "Развивайте древнюю цивилизацию, строя сооружения и развивая науку.",
+      "image": "images/seven-wonders.svg",
+      "age": {
+        "minimum": 10,
+        "label": "10+"
+      },
+      "features": [
+        "развитие цивилизации",
+        "выбор карт"
+      ],
+      "available": true,
+      "oldPrice": 3690,
+      "isHit": true
+    },
+    {
+      "id": "BG-011",
+      "title": "Цитадели",
+      "genre": "Стратегия",
+      "minPlayers": 2,
+      "maxPlayers": 8,
+      "price": 1990,
+      "rating": 7.8,
+      "description": "Выбирайте роли, получайте доход и возводите кварталы своего города.",
+      "image": "images/citadels.svg",
+      "age": {
+        "minimum": 10,
+        "label": "10+"
+      },
+      "features": [
+        "выбор ролей",
+        "строительство"
+      ],
+      "available": true,
+      "oldPrice": 1990,
+      "isHit": false
+    },
+    {
+      "id": "BG-012",
+      "title": "Саботёр",
+      "genre": "Карточная",
+      "minPlayers": 3,
+      "maxPlayers": 10,
+      "price": 990,
+      "rating": 7,
+      "description": "Ищите золото в шахте, не забывая о скрытых намерениях участников.",
+      "image": "images/saboteur.svg",
+      "age": {
+        "minimum": 8,
+        "label": "8+"
+      },
+      "features": [
+        "скрытые роли",
+        "командное взаимодействие"
+      ],
+      "available": true,
+      "oldPrice": 990,
+      "isHit": false
+    },
+    {
+      "id": "BG-013",
+      "title": "Пандемия",
+      "genre": "Кооперативная",
+      "minPlayers": 2,
+      "maxPlayers": 4,
+      "price": 2790,
+      "rating": 7.6,
+      "description": "Работайте сообща, чтобы остановить распространение опасных болезней.",
+      "image": "images/pandemic.svg",
+      "age": {
+        "minimum": 8,
+        "label": "8+"
+      },
+      "features": [
+        "совместная цель",
+        "планирование"
+      ],
+      "available": true,
+      "oldPrice": 2790,
+      "isHit": false
+    },
+    {
+      "id": "BG-014",
+      "title": "Твистер",
+      "genre": "Развлекательная",
+      "minPlayers": 2,
+      "maxPlayers": 6,
+      "price": 1190,
+      "rating": 6.9,
+      "description": "Выполняйте задания ведущего и сохраняйте равновесие на игровом поле.",
+      "image": "images/twister.svg",
+      "age": {
+        "minimum": 6,
+        "label": "6+"
+      },
+      "features": [
+        "двигательная активность",
+        "простые правила"
+      ],
+      "available": true,
+      "oldPrice": 1190,
+      "isHit": false
+    },
+    {
+      "id": "BG-015",
+      "title": "Элиас",
+      "genre": "Словесная",
+      "minPlayers": 4,
+      "maxPlayers": 12,
+      "price": 1690,
+      "rating": 7.5,
+      "description": "Объясняйте слова команде, не называя их напрямую, и успевайте до конца времени.",
+      "image": "images/alias.svg",
+      "age": {
+        "minimum": 10,
+        "label": "10+"
+      },
+      "features": [
+        "командная игра",
+        "объяснение слов"
+      ],
+      "available": true,
+      "oldPrice": 1690,
+      "isHit": false
+    }
+  ],
+  "orders": []
+}
